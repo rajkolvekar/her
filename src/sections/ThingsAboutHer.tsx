@@ -38,6 +38,12 @@ const items = [
     title: 'Kedarnath',
     message: "Maybe one day... we'll stand there together.",
   },
+  {
+    emoji: '🔴',
+    title: 'Teeka',
+    message:
+      "A tiny teeka on your forehead... it's one of those little things that somehow became part of how I picture you.",
+  },
 ];
 
 export default function ThingsAboutHer() {
