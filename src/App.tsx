@@ -12,10 +12,30 @@ import useLenis from './hooks/useLenis';
 import ScrollProgress from './components/ScrollProgress';
 import MusicToggle from './components/MusicToggle'; // 👈 add this
 
+// export default function App() {
+//   useLenis();
+//   return (
+//     <>
+//       <ScrollProgress />
+//       <MusicToggle />
+//       <StarBackground />
+//       <Moon />
+//       <Opening />
+//       <Journey />
+//       <NightMemories />
+//       <ThingsAboutHer />
+//       <MemoryWall />
+//       <HerEyes />
+//       <Calm />
+//       <FinalLette />
+//     </>
+//   );
+// }
 export default function App() {
   useLenis();
+
   return (
-    <>
+    <main>
       <ScrollProgress />
       <MusicToggle />
       <StarBackground />
@@ -28,6 +48,6 @@ export default function App() {
       <HerEyes />
       <Calm />
       <FinalLette />
-    </>
+    </main>
   );
 }

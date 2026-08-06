@@ -57,19 +57,22 @@ export default function ThingsAboutHer() {
 
       <div className="things-grid">
         {items.map((item) => (
-          <motion.button
+          <motion.div
             key={item.title}
             className="glass-card"
             whileHover={{
               scale: 1.08,
               y: -8,
             }}
-            onClick={() => setSelected(item)}
+            onClick={() => {
+              console.log('CLICKED');
+              setSelected(item);
+            }}
           >
             <div className="emoji">{item.emoji}</div>
 
             <h3>{item.title}</h3>
-          </motion.button>
+          </motion.div>
         ))}
       </div>
 
