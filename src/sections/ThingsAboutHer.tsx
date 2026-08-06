@@ -57,7 +57,7 @@ export default function ThingsAboutHer() {
 
       <div className="things-grid">
         {items.map((item) => (
-          <motion.div
+          <motion.button
             key={item.title}
             className="glass-card"
             whileHover={{
@@ -69,7 +69,7 @@ export default function ThingsAboutHer() {
             <div className="emoji">{item.emoji}</div>
 
             <h3>{item.title}</h3>
-          </motion.div>
+          </motion.button>
         ))}
       </div>
 
