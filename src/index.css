@@ -567,3 +567,36 @@ main {
 .music-btn:hover {
   transform: scale(1.1);
 }
+.heart-progress {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  z-index: 9999;
+}
+
+.heart-outline,
+.heart-fill {
+  position: absolute;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.heart-fill {
+  overflow: hidden;
+}
